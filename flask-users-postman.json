@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "Flask Users API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://127.0.0.1:5000/", "protocol": "http", "host": ["127","0","0","1"], "port": "5000", "path": [""] }
+      }
+    },
+    {
+      "name": "GET /users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://127.0.0.1:5000/users", "protocol": "http", "host": ["127","0","0","1"], "port": "5000", "path": ["users"] }
+      }
+    },
+    {
+      "name": "POST /users",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"name\": \"Ritesh\",\n  \"email\": \"ritesh@example.com\"\n}" },
+        "url": { "raw": "http://127.0.0.1:5000/users", "host": ["127","0","0","1"], "port": "5000", "path": ["users"] }
+      }
+    },
+    {
+      "name": "GET /users/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "http://127.0.0.1:5000/users/1", "host": ["127","0","0","1"], "port": "5000", "path": ["users","1"] }
+      }
+    },
+    {
+      "name": "PUT /users/:id",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"name\": \"Ritesh D\",\n  \"email\": \"ritesh.d@example.com\"\n}" },
+        "url": { "raw": "http://127.0.0.1:5000/users/1", "host": ["127","0","0","1"], "port": "5000", "path": ["users","1"] }
+      }
+    },
+    {
+      "name": "DELETE /users/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": { "raw": "http://127.0.0.1:5000/users/1", "host": ["127","0","0","1"], "port": "5000", "path": ["users","1"] }
+      }
+    }
+  ]
+}
